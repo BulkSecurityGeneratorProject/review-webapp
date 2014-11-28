@@ -1,0 +1,18 @@
+{
+  "generator-jhipster": {
+    "baseName": "reviews",
+    "packageName": "com.reviews.web",
+    "packageFolder": "com/reviews/web",
+    "authenticationType": "token",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "nosql",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "useCompass": true,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8"
+  }
+}
