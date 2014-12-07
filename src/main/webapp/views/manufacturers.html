@@ -1,0 +1,99 @@
+<div>
+
+    <h2>Manufacturers</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveManufacturerModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> Create a new Manufacturer
+    </button>
+    <div class="modal fade" id="saveManufacturerModal" tabindex="-1" role="dialog" aria-labelledby="myManufacturerLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="form" role="form" novalidate
+                      class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength"
+                      ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myManufacturerLabel">Create or edit a Manufacturer</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="manufacturer.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control"
+                                   ng-model="manufacturer.name">
+                        </div>
+                        <div class="form-group">
+                            <label>Website</label>
+                            <input type="text" class="form-control"
+                                   ng-model="manufacturer.website">
+                        </div>
+                        <div class="form-group">
+                            <label>Wiki</label>
+                            <input type="text" class="form-control"
+                                   ng-model="manufacturer.wiki">
+                        </div>
+                        <div class="form-group">
+                            <label>Logo</label>
+                            <input type="text" class="form-control"
+                                   ng-model="manufacturer.logo">
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+                        </button>
+                        <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span> Save
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Website</th>
+                    <th>Wiki</th>
+                    <th>Logo</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="manufacturer in manufacturers">
+                    <td>{{manufacturer.id}}</td>
+                    <td>{{manufacturer.name}}</td>
+                    <td>{{manufacturer.website}}</td>
+                    <td>{{manufacturer.wiki}}</td>
+                    <td>{{manufacturer.logo}}</td>
+                    <td>
+                        <button type="submit"
+                                ng-click="update(manufacturer.id)"
+                                class="btn btn-default">
+                            <span class="glyphicon glyphicon-pencil"></span> Edit
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(manufacturer.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span> Delete
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

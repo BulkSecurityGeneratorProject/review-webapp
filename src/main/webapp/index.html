@@ -49,6 +49,10 @@
                                 </span>
                             </a>
                             <ul class="dropdown-menu" ng-controller="MenuController">
+                                <li ng-switch-when="true"><a href="#/product"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;product</a></li>
+                                <li ng-switch-when="true"><a href="#/manufacturer"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;manufacturer</a></li>
+                                <li ng-switch-when="true"><a href="#/expertReview"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;expertReview</a></li>
+                                <li ng-switch-when="true"><a href="#/review"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;review</a></li>
                                 <!-- JHipster will add entities to the menu here -->
                             </ul>
                         </li>
@@ -170,6 +174,18 @@
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/collapse.js"></script>
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/tab.js"></script>
+        <script src="scripts/product/router_product.js"></script>
+        <script src="scripts/product/controller_product.js"></script>
+        <script src="scripts/product/service_product.js"></script>
+        <script src="scripts/manufacturer/router_manufacturer.js"></script>
+        <script src="scripts/manufacturer/controller_manufacturer.js"></script>
+        <script src="scripts/manufacturer/service_manufacturer.js"></script>
+        <script src="scripts/expertReview/router_expertReview.js"></script>
+        <script src="scripts/expertReview/controller_expertReview.js"></script>
+        <script src="scripts/expertReview/service_expertReview.js"></script>
+        <script src="scripts/review/router_review.js"></script>
+        <script src="scripts/review/controller_review.js"></script>
+        <script src="scripts/review/service_review.js"></script>
         <!-- endbuild -->
 </body>
 </html>

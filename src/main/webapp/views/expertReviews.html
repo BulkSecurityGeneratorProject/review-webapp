@@ -1,0 +1,92 @@
+<div>
+
+    <h2>ExpertReviews</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveExpertReviewModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> Create a new ExpertReview
+    </button>
+    <div class="modal fade" id="saveExpertReviewModal" tabindex="-1" role="dialog" aria-labelledby="myExpertReviewLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="form" role="form" novalidate
+                      class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength"
+                      ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myExpertReviewLabel">Create or edit a ExpertReview</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="expertReview.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Url</label>
+                            <input type="text" class="form-control"
+                                   ng-model="expertReview.url">
+                        </div>
+                        <div class="form-group">
+                            <label>Summary</label>
+                            <input type="text" class="form-control"
+                                   ng-model="expertReview.summary">
+                        </div>
+                        <div class="form-group">
+                            <label>Source</label>
+                            <input type="text" class="form-control"
+                                   ng-model="expertReview.source">
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+                        </button>
+                        <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span> Save
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Url</th>
+                    <th>Summary</th>
+                    <th>Source</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="expertReview in expertReviews">
+                    <td>{{expertReview.id}}</td>
+                    <td>{{expertReview.url}}</td>
+                    <td>{{expertReview.summary}}</td>
+                    <td>{{expertReview.source}}</td>
+                    <td>
+                        <button type="submit"
+                                ng-click="update(expertReview.id)"
+                                class="btn btn-default">
+                            <span class="glyphicon glyphicon-pencil"></span> Edit
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(expertReview.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span> Delete
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
