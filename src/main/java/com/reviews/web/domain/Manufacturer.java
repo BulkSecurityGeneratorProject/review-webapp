@@ -1,23 +1,16 @@
 package com.reviews.web.domain;
 
-import org.joda.time.DateTime;
+import java.io.Serializable;
+
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
-
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.reviews.web.domain.util.CustomDateTimeDeserializer;
-import com.reviews.web.domain.util.CustomDateTimeSerializer;
-
-import java.io.Serializable;
 
 /**
  * A Manufacturer.
  */
 @Document(collection = "T_MANUFACTURER")
-public class Manufacturer implements Serializable {
+public class Manufacturer extends AbstractAuditingEntity implements Serializable  {
 
 	@Id
 	private String id;
@@ -34,19 +27,6 @@ public class Manufacturer implements Serializable {
 	@Field("logo")
 	private String logo;
 	
-	@JsonSerialize(using = CustomDateTimeSerializer.class)
-	@JsonDeserialize(using = CustomDateTimeDeserializer.class)
-	@Field("created_date")
-	private DateTime createdDate;
-	
-	@JsonSerialize(using = CustomDateTimeSerializer.class)
-	@JsonDeserialize(using = CustomDateTimeDeserializer.class)
-	@Field("updated_date")
-	private DateTime updatedDate;
-	
-	@DBRef
-	private User updatedBy;
-
 	public String getId() {
 		return id;
 	}
@@ -85,30 +65,6 @@ public class Manufacturer implements Serializable {
 
 	public void setLogo(String logo) {
 		this.logo = logo;
-	}
-
-	public DateTime getCreatedDate() {
-		return createdDate;
-	}
-
-	public void setCreatedDate(DateTime createdDate) {
-		this.createdDate = createdDate;
-	}
-
-	public DateTime getUpdatedDate() {
-		return updatedDate;
-	}
-
-	public void setUpdatedDate(DateTime updatedDate) {
-		this.updatedDate = updatedDate;
-	}
-
-	public User getUpdatedBy() {
-		return updatedBy;
-	}
-
-	public void setUpdatedBy(User updatedBy) {
-		this.updatedBy = updatedBy;
 	}
 
 	@Override

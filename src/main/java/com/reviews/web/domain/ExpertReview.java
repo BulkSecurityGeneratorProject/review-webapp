@@ -17,7 +17,7 @@ import java.io.Serializable;
  * A ExpertReview.
  */
 @Document(collection = "T_EXPERTREVIEW")
-public class ExpertReview implements Serializable {
+public class ExpertReview extends AbstractAuditingEntity implements Serializable {
 
     @Id
     private String id;
@@ -31,19 +31,6 @@ public class ExpertReview implements Serializable {
     @Field("source")
     private String source;
     
-    @JsonSerialize(using = CustomDateTimeSerializer.class)
-	@JsonDeserialize(using = CustomDateTimeDeserializer.class)
-	@Field("created_date")
-	private DateTime createdDate;
-	
-	@JsonSerialize(using = CustomDateTimeSerializer.class)
-	@JsonDeserialize(using = CustomDateTimeDeserializer.class)
-	@Field("updated_date")
-	private DateTime updatedDate;
-	
-	@DBRef
-	private User updatedBy;
-
     public String getId() {
         return id;
     }
@@ -75,30 +62,6 @@ public class ExpertReview implements Serializable {
     public void setSource(String source) {
         this.source = source;
     }
-
-    public DateTime getCreatedDate() {
-		return createdDate;
-	}
-
-	public void setCreatedDate(DateTime createdDate) {
-		this.createdDate = createdDate;
-	}
-
-	public DateTime getUpdatedDate() {
-		return updatedDate;
-	}
-
-	public void setUpdatedDate(DateTime updatedDate) {
-		this.updatedDate = updatedDate;
-	}
-
-	public User getUpdatedBy() {
-		return updatedBy;
-	}
-
-	public void setUpdatedBy(User updatedBy) {
-		this.updatedBy = updatedBy;
-	}
 
 	@Override
     public boolean equals(Object o) {

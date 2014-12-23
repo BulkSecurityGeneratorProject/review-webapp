@@ -4,7 +4,7 @@
 var httpHeaders;
 
 var reviewsApp = angular.module('reviewsApp', ['http-auth-interceptor', 'tmh.dynamicLocale',
-    'ngResource', 'ngRoute', 'ngCookies', 'reviewsAppUtils', 'pascalprecht.translate', 'truncate']);
+    'ngResource', 'ngRoute', 'ngCookies', 'reviewsAppUtils', 'pascalprecht.translate', 'truncate', 'ui.bootstrap']);
 
 reviewsApp
     .config(function ($routeProvider, $httpProvider, $translateProvider, tmhDynamicLocaleProvider, USER_ROLES) {

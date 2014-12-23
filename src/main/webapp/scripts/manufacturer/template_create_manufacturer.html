@@ -1,0 +1,40 @@
+<form name="form" role="form" novalidate class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength" ng-submit="create()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="close()">&times;</button>
+        <h4 class="modal-title" id="myManufacturerLabel">Create or edit a Manufacturer</h4>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label>ID</label>
+            <input type="text" class="form-control" name="id" ng-model="manufacturer.id" readonly>
+        </div>
+
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" ng-model="manufacturer.name">
+        </div>
+        <div class="form-group">
+            <label>Website</label>
+            <input type="text" class="form-control" ng-model="manufacturer.website">
+        </div>
+        <div class="form-group">
+            <label>Wiki</label>
+            <input type="text" class="form-control" ng-model="manufacturer.wiki">
+        </div>
+        <div class="form-group">
+            <label>Logo</label>
+            <input type="text" class="form-control" ng-model="manufacturer.logo">
+        </div>
+
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="close()">
+            <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+        </button>
+        <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span> Save
+        </button>
+    </div>
+</form>

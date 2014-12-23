@@ -1,27 +1,30 @@
 package com.reviews.web.domain;
 
 import java.io.Serializable;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
-import org.joda.time.DateTime;
 import org.json.JSONObject;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
+import org.springframework.util.StringUtils;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsonorg.JSONObjectDeserializer;
 import com.fasterxml.jackson.datatype.jsonorg.JSONObjectSerializer;
-import com.reviews.web.domain.util.CustomDateTimeDeserializer;
-import com.reviews.web.domain.util.CustomDateTimeSerializer;
+import com.reviews.web.domain.util.TagDeserializer;
+import com.reviews.web.domain.util.TagSerializer;
 
 /**
  * A Product.
  */
 @Document(collection = "T_PRODUCT")
-public class Product implements Serializable {
+public class Product extends AbstractAuditingEntity implements Serializable {
 
 	@Id
 	private String id;
@@ -32,16 +35,20 @@ public class Product implements Serializable {
 	@DBRef
 	private Manufacturer manufacturer;
 
+	@DBRef
+	private Category category;
+
+
+	@Field("tags")
+	@JsonSerialize(using=TagSerializer.class)
+	@JsonDeserialize(using=TagDeserializer.class)
+	private Set<String> tags;
+
 	@Field("image")
 	private String image;
 
 	@Field("wiki")
 	private String wiki;
-
-	@JsonSerialize(using = CustomDateTimeSerializer.class)
-	@JsonDeserialize(using = CustomDateTimeDeserializer.class)
-	@Field("created_date")
-	private DateTime createdDate;
 
 	@JsonSerialize(using = JSONObjectSerializer.class)
 	@JsonDeserialize(using = JSONObjectDeserializer.class)
@@ -53,14 +60,6 @@ public class Product implements Serializable {
 
 	@Field("reviews")
 	private List<Review> reviews;
-
-	@JsonSerialize(using = CustomDateTimeSerializer.class)
-	@JsonDeserialize(using = CustomDateTimeDeserializer.class)
-	@Field("updated_date")
-	private DateTime updatedDate;
-
-	@DBRef
-	private User updatedBy;
 
 	public String getId() {
 		return id;
@@ -86,6 +85,28 @@ public class Product implements Serializable {
 		this.manufacturer = manufacturer;
 	}
 
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+		this.tags.addAll(category.getTags());
+	}
+
+
+	public Set<String> getTags() {
+		return tags;
+	}
+
+	public void setTags(Set<String> tags) {
+		if (tags.size() > 0) {
+			this.tags.addAll(tags);
+		} else {
+			this.tags = tags;
+		}
+	}
+
 	public String getImage() {
 		return image;
 	}
@@ -100,14 +121,6 @@ public class Product implements Serializable {
 
 	public void setWiki(String wiki) {
 		this.wiki = wiki;
-	}
-
-	public DateTime getCreatedDate() {
-		return createdDate;
-	}
-
-	public void setCreatedDate(DateTime createdDate) {
-		this.createdDate = createdDate;
 	}
 
 	public JSONObject getSpecs() {
@@ -132,22 +145,6 @@ public class Product implements Serializable {
 
 	public void setReviews(List<Review> reviews) {
 		this.reviews = reviews;
-	}
-
-	public DateTime getUpdatedDate() {
-		return updatedDate;
-	}
-
-	public void setUpdatedDate(DateTime updatedDate) {
-		this.updatedDate = updatedDate;
-	}
-
-	public User getUpdatedBy() {
-		return updatedBy;
-	}
-
-	public void setUpdatedBy(User updatedBy) {
-		this.updatedBy = updatedBy;
 	}
 
 	@Override
@@ -176,8 +173,8 @@ public class Product implements Serializable {
 	public String toString() {
 		return "Product {id : " + id + ", name : " + name + ", manufacturer : "
 				+ manufacturer + ", image : " + image + ", wiki : " + wiki
-				+ ", createdDate : " + createdDate + ", specs : " + specs
-				+ ", expertReviews : " + expertReviews + ", reviews : "
+				+ ", createdDate : " + super.getCreatedDate() + ", specs : "
+				+ specs + ", expertReviews : " + expertReviews + ", reviews : "
 				+ reviews + "}";
 	}
 

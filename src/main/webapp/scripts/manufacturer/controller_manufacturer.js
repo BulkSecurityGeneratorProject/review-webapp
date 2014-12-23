@@ -1,31 +1,43 @@
 'use strict';
 
-reviewsApp.controller('ManufacturerController', function ($scope, resolvedManufacturer, Manufacturer) {
+reviewsApp.controller('ManufacturerController', function ($scope, resolvedManufacturer, Manufacturer, $modal) {
 
-        $scope.manufacturers = resolvedManufacturer;
+    $scope.manufacturers = resolvedManufacturer;
 
-        $scope.create = function () {
-            Manufacturer.save($scope.manufacturer,
-                function () {
-                    $scope.manufacturers = Manufacturer.query();
-                    $('#saveManufacturerModal').modal('hide');
-                    $scope.clear();
-                });
-        };
+    function openModal(id) {
+        var modalInstance = $modal.open({
+            templateUrl: 'scripts/manufacturer/template_create_manufacturer.html',
+            controller: 'CreateManufacturerController',
+            resolve: {
+                resolvedManufacturer: function (Manufacturer) {
+                    if (id) {
+                        return Manufacturer.get({
+                            id: id
+                        }).$promise;
+                    }
+                    return;
+                }
+            }
+        });
+        modalInstance.result.then(function () {
+            $scope.manufacturers = Manufacturer.query();
+        });
+    }
 
-        $scope.update = function (id) {
-            $scope.manufacturer = Manufacturer.get({id: id});
-            $('#saveManufacturerModal').modal('show');
-        };
+    $scope.open = function () {
+        openModal();
+    };
 
-        $scope.delete = function (id) {
-            Manufacturer.delete({id: id},
-                function () {
-                    $scope.manufacturers = Manufacturer.query();
-                });
-        };
+    $scope.update = function (id) {
+        openModal(id);
+    };
 
-        $scope.clear = function () {
-            $scope.manufacturer = {name: null, website: null, wiki: null, logo: null, id: null};
-        };
-    });
+    $scope.delete = function (id) {
+        Manufacturer.delete({
+                id: id
+            },
+            function () {
+                $scope.manufacturers = Manufacturer.query();
+            });
+    };
+});

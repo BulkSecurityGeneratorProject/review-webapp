@@ -1,9 +1,9 @@
 <div>
 
-    <h2>Manufacturers</h2>
+    <h2>categories</h2>
 
     <button class="btn btn-primary btn-lg" ng-click="open()">
-        <span class="glyphicon glyphicon-flash"></span> Create a new Manufacturer
+        <span class="glyphicon glyphicon-flash"></span> Create a new Category
     </button>
 
     <div class="table-responsive">
@@ -12,27 +12,29 @@
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>Website</th>
-                    <th>Wiki</th>
-                    <th>Logo</th>
+                    <th>CreatedDate</th>
+                    <th>UpdatedDate</th>
+                    <th>UpdatedBy</th>
+                    <th>Tags</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="manufacturer in manufacturers">
-                    <td>{{manufacturer.id}}</td>
-                    <td>{{manufacturer.name}}</td>
-                    <td>{{manufacturer.website}}</td>
-                    <td>{{manufacturer.wiki}}</td>
-                    <td>{{manufacturer.logo}}</td>
+                <tr ng-repeat="category in categories">
+                    <td>{{category.id}}</td>
+                    <td>{{category.name}}</td>
+                    <td>{{category.createdDate}}</td>
+                    <td>{{category.updatedDate}}</td>
+                    <td>{{category.updatedBy}}</td>
+                    <td>{{category.tags}}</td>
                     <td>
                         <button type="submit"
-                                ng-click="update(manufacturer.id)"
+                                ng-click="update(category.id)"
                                 class="btn btn-default">
                             <span class="glyphicon glyphicon-pencil"></span> Edit
                         </button>
                         <button type="submit"
-                                ng-click="delete(manufacturer.id)"
+                                ng-click="delete(category.id)"
                                 class="btn btn-danger">
                             <span class="glyphicon glyphicon-remove-circle"></span> Delete
                         </button>

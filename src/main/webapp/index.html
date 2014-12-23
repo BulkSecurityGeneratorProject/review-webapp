@@ -38,8 +38,8 @@
                                 <span translate="global.menu.home">Home</span>
                             </a>
                         </li>
-                        <li ng-switch-when="true" class="dropdown pointer">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                        <li ng-switch-when="true" dropdown class="dropdown pointer">
+                            <a class="dropdown-toggle" dropdown-toggle data-toggle="dropdown" href="javascript:;">
                                 <span>
                                     <span class="glyphicon glyphicon-th-list"></span>
                                     <span class="hidden-tablet" translate="global.menu.entities.main">
@@ -53,11 +53,12 @@
                                 <li ng-switch-when="true"><a href="#/manufacturer"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;manufacturer</a></li>
                                 <li ng-switch-when="true"><a href="#/expertReview"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;expertReview</a></li>
                                 <li ng-switch-when="true"><a href="#/review"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;review</a></li>
+                                <li ng-switch-when="true"><a href="#/category"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;category</a></li>
                                 <!-- JHipster will add entities to the menu here -->
                             </ul>
                         </li>
-                        <li class="dropdown pointer">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                        <li class="dropdown pointer" dropdown>
+                            <a class="dropdown-toggle" data-toggle="dropdown" dropdown-toggle href="javascript:;">
                                 <span>
                                     <span class="glyphicon glyphicon-user"></span>
                                     <span class="hidden-tablet" translate="global.menu.account.main">
@@ -82,8 +83,8 @@
                                     &nbsp;<span translate="global.menu.account.register">Register</span></a></li>
                             </ul>
                         </li>
-                        <li ng-switch-when="true" ng-show="isAuthorized(userRoles.admin)" class="dropdown pointer" ng-controller="AdminController">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                        <li ng-switch-when="true" ng-show="isAuthorized(userRoles.admin)" dropdown class="dropdown pointer" ng-controller="AdminController">
+                            <a class="dropdown-toggle" dropdown-toggle data-toggle="dropdown" href="javascript:;">
                                 <span>
                                     <span class="glyphicon glyphicon-tower"></span>
                                     <span class="hidden-tablet" translate="global.menu.admin">Admin</span>
@@ -105,8 +106,8 @@
                                     &nbsp;<span translate="global.menu.account.apidocs">API Docs</span></a></li>
                             </ul>
                         </li>
-                        <li class="dropdown pointer" ng-controller="LanguageController">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                        <li class="dropdown pointer" dropdown ng-controller="LanguageController">
+                            <a class="dropdown-toggle" dropdown-toggle data-toggle="dropdown" href="javascript:;">
                                 <span>
                                     <span class="glyphicon glyphicon-flag"></span>
                                     <span class="hidden-tablet" translate="global.menu.language">Language</span>
@@ -153,6 +154,8 @@
         <script src="bower_components/angular-translate/angular-translate.js"></script>
         <script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
         <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
         <script src="bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
         <script src="scripts/http-auth-interceptor.js"></script>
         <script src="scripts/truncate.js"></script>
@@ -162,6 +165,7 @@
         <script src="scripts/controllers.js"></script>
         <script src="scripts/services.js"></script>
         <script src="scripts/directives.js"></script>
+        <!-- Hidden since angular-bootstrap
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/affix.js"></script>
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/alert.js"></script>
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
@@ -174,11 +178,14 @@
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/collapse.js"></script>
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/tab.js"></script>
+        -->
         <script src="scripts/product/router_product.js"></script>
         <script src="scripts/product/controller_product.js"></script>
         <script src="scripts/product/service_product.js"></script>
+        <script src="scripts/product/controller_create_product.js"></script>
         <script src="scripts/manufacturer/router_manufacturer.js"></script>
         <script src="scripts/manufacturer/controller_manufacturer.js"></script>
+        <script src="scripts/manufacturer/controller_create_manufacturer.js"></script>
         <script src="scripts/manufacturer/service_manufacturer.js"></script>
         <script src="scripts/expertReview/router_expertReview.js"></script>
         <script src="scripts/expertReview/controller_expertReview.js"></script>
@@ -186,6 +193,10 @@
         <script src="scripts/review/router_review.js"></script>
         <script src="scripts/review/controller_review.js"></script>
         <script src="scripts/review/service_review.js"></script>
+        <script src="scripts/category/router_category.js"></script>
+        <script src="scripts/category/controller_category.js"></script>
+        <script src="scripts/category/controller_create_category.js"></script>
+        <script src="scripts/category/service_category.js"></script>
         <!-- endbuild -->
 </body>
 </html>

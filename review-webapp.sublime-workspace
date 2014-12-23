@@ -1,0 +1,1925 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"$loca",
+				"$location	AngularJS"
+			],
+			[
+				"reso",
+				"resolvedCategories"
+			],
+			[
+				"open",
+				"openModal"
+			],
+			[
+				"cl",
+				"close"
+			],
+			[
+				"mod",
+				"modalInstance"
+			],
+			[
+				"$pr",
+				"$promise"
+			],
+			[
+				"res",
+				"resolvedProduct"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"a",
+				"all"
+			],
+			[
+				"Prd",
+				"ProductController"
+			],
+			[
+				"con",
+				"controller"
+			],
+			[
+				"prod",
+				"product"
+			],
+			[
+				"w",
+				"when"
+			],
+			[
+				"cli",
+				"click	click"
+			],
+			[
+				"text",
+				"textfield"
+			],
+			[
+				"ite",
+				"items"
+			],
+			[
+				"la",
+				"layout"
+			],
+			[
+				"conta",
+				"container"
+			],
+			[
+				"main",
+				"maintainLastFocus"
+			],
+			[
+				"save",
+				"savePassword"
+			],
+			[
+				"th",
+				"this	$(this)"
+			],
+			[
+				"ad",
+				"administration"
+			],
+			[
+				"chang",
+				"changePassword"
+			],
+			[
+				"selec",
+				"selectNode"
+			],
+			[
+				"par",
+				"parseInt"
+			],
+			[
+				"patien",
+				"patientId"
+			],
+			[
+				"eve",
+				"eventData"
+			],
+			[
+				"ani",
+				"animateTarget"
+			],
+			[
+				"att",
+				"attachDomEvents"
+			],
+			[
+				"even",
+				"eventWindow"
+			],
+			[
+				"patie",
+				"patientId"
+			],
+			[
+				"animate",
+				"animTarget  (variable)"
+			],
+			[
+				"fai",
+				"failureResponse  (function)"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"A",
+				"Ajax"
+			],
+			[
+				"cale",
+				"calendarStore"
+			],
+			[
+				"fade",
+				"fadeIn  (function)"
+			],
+			[
+				"find",
+				"find  (function)"
+			],
+			[
+				"Cal",
+				"CalendarConfiguration"
+			],
+			[
+				"app",
+				"appointment"
+			],
+			[
+				"Event",
+				"EventMappings"
+			],
+			[
+				"event",
+				"eventWindow"
+			],
+			[
+				"cur",
+				"cur	cursor: ${pointer};"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"pati",
+				"patientId"
+			],
+			[
+				"patient",
+				"patient"
+			],
+			[
+				"read",
+				"ready	$(document).ready"
+			],
+			[
+				"ideas",
+				"ideas-badge"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"test",
+				"tests"
+			],
+			[
+				"tes",
+				"tests"
+			],
+			[
+				"comp",
+				"compile"
+			],
+			[
+				"fo",
+				"for	for (…) {…}"
+			],
+			[
+				"te",
+				"tests"
+			],
+			[
+				"ERR",
+				"ERROR"
+			],
+			[
+				"E",
+				"ERROR_TITLE"
+			],
+			[
+				"aler",
+				"showAlert"
+			],
+			[
+				"cha",
+				"changeDoctorPreferences"
+			],
+			[
+				"doc",
+				"doctor"
+			],
+			[
+				"sel",
+				"self"
+			],
+			[
+				"doctor",
+				"doctorId"
+			],
+			[
+				"ge",
+				"get	$.get()"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"bar",
+				"brand-secondary"
+			],
+			[
+				"pat",
+				"patientId"
+			],
+			[
+				"err",
+				"errors"
+			],
+			[
+				"unde",
+				"undefined"
+			],
+			[
+				"und",
+				"undefined"
+			],
+			[
+				"para",
+				"params"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"val",
+				"values"
+			],
+			[
+				"pos",
+				"postData"
+			],
+			[
+				"rec",
+				"records"
+			],
+			[
+				"diag",
+				"diagnosis"
+			],
+			[
+				"c",
+				"ctrl"
+			],
+			[
+				"ideas-ta",
+				"ideas-table-body"
+			],
+			[
+				"t",
+				"tbody	Tag"
+			],
+			[
+				"bor",
+				"border-spacing"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"ideas-patient",
+				"ideas-patient-detail-name"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"r",
+				"row"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"on",
+				"on	on (addListener)"
+			],
+			[
+				"v",
+				"voice"
+			],
+			[
+				"prot",
+				"prototype"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/main/webapp/scripts/manufacturer/controller_create_manufacturer.js",
+			"settings":
+			{
+				"buffer_size": 683,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/main/webapp/views/products.html",
+			"settings":
+			{
+				"buffer_size": 2195,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/scripts/product/controller_create_product.js",
+			"settings":
+			{
+				"buffer_size": 726,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/main/webapp/views/create-product.html",
+			"settings":
+			{
+				"buffer_size": 2127,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/main/webapp/scripts/product/router_product.js",
+			"settings":
+			{
+				"buffer_size": 1351,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"Remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Tag",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"i",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"Json",
+				"Set Syntax: JSON"
+			],
+			[
+				"pacin",
+				"Package Control: Install Package"
+			],
+			[
+				"pack insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packins",
+				"Package Control: Install Package"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"plaint",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"JSp",
+				"Set Syntax: Java Server Page (JSP)"
+			],
+			[
+				"set syntH",
+				"Set Syntax: HTML"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"PackC",
+				"Package Control: Install Package"
+			],
+			[
+				"PacCon",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"JS",
+				"Set Syntax: Java Server Page (JSP)"
+			],
+			[
+				"HTM",
+				"Set Syntax: HTML"
+			],
+			[
+				"JSP",
+				"Set Syntax: Java Server Page (JSP)"
+			],
+			[
+				"Html",
+				"Set Syntax: HTML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"jsp",
+				"Set Syntax: Java Server Page (JSP)"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"Emmet",
+				"Set Syntax: Emmet"
+			],
+			[
+				"PCins",
+				"Package Control: Install Package"
+			],
+			[
+				"SeSyn java",
+				"Set Syntax: Java"
+			],
+			[
+				"PacIns",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"PackIns",
+				"Package Control: Install Package"
+			],
+			[
+				"SCSS",
+				"Set Syntax: SCSS"
+			],
+			[
+				"setjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"set sy jQ",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"packing",
+				"Package Control: Install Package"
+			],
+			[
+				"Packain",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jq",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"sencha",
+				"Snippet: import Sencha Touch theme"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"jqu",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Packag",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/product/controller_product.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/category/template_create_category.html",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/manufacturer/template_create_manufacturer.html",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/manufacturer/service_manufacturer.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/manufacturer/router_manufacturer.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/manufacturer/controller_manufacturer.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/category/controller_category.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/category/controller_create_category.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/manufacturer/controller_create_manufacturer.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/Gruntfile.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/views/categories.html",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/product/router_product.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/product/service_product.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/category/router_category.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/category/service_category.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/views/manufacturers.html",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/index.html",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/product/controller_create_product.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/views/create-product.html",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/views/categorys.html",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/HTML-CSS-JS Prettify/Default (Windows).sublime-keymap",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/robots.txt",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/product/CreateProductController.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/truncate.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/views/products.html",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/java/com/reviews/web/domain/Product.java",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/app.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/bower.json",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/bower_components/angular-bootstrap/bower.json",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/bower_components/bootstrap-sass/.bower.json",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/bower_components/bootstrap-sass/bower.json",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap.js",
+		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/pom.xml",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/WEB-INF/views/usermanagement/settings.jsp",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/WEB-INF/views/patient/patient-profile.jsp",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/administration/clinic/view/AddUser.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/administration/clinic/controller/ClinicController.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/sass/desktop/admin.scss",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/administration/clinic/view/Privileges.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/sass/desktop/_desktop.scss",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/sass/desktop/_desktop-base.scss",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/config/Privileges.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/sass/theme/ideas-theme.scss",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/sass/desktop/screen.scss",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/appointment/manage/store/EventStore.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/appointment/manage/view/EventWindow.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/ideas.jsb2",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/form/ClinicDetails.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/widgets/Form.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/administration/clinic/Clinic.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/administration/clinic/Clinic_new.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/deploy/trelta-settings-all-debug.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/appointment/manage/view/CalendarView.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/administration/clinic/view/AddUser_old.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/administration/clinic/view/ClinicDetails.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/administration/clinic/view/EditUserSettings.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/widgets/Window.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/WEB-INF/views/patient/case.jsp",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/administration/clinic/view/Password.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/WEB-INF/views/usermanagement/dashboard.jsp",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/model/Patient.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/patient/manager/controller/PatientController.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/model/Address.js",
+		"/C/Users/Owner/Documents/Work/Workspace/Learn/JS/node/main.js",
+		"/C/Users/Owner/Documents/Work/Workspace/Learn/JS/node/ntut.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extensible/extensible-1.6.0-b1/src/calendar/form/EventWindow.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/appointment/manage/model/CalendarConfiguration.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/store/PatientStore.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extensible/extensible-1.6.0-b1/src/form/field/DateRange.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/form/PatientCombo.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/deploy/trelta-desktop-all-debug.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extensible/extensible-1.6.0-b1/src/calendar/data/EventModel.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extjs-4.1.1/src/form/Panel.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/patient/manager/PatientProfile.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/desktop/DesktopApp.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/desktop/controller/DesktopNewController.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/appointment/manage/controller/AppointmentController.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/desktop/Desktop_new.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/desktop/Desktop.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/desktop/controller/DesktopController.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/appointment/manage/Appointment.js",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/appointment/manage/store/CalendarStore.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extensible/extensible-1.6.0-b1/src/data/Model.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extensible/extensible-1.6.0-b1/src/Extensible.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extensible/extensible-1.6.0-b1/src/calendar/form/field/CalendarCombo.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extensible/extensible-1.6.0-b1/src/calendar/data/CalendarMappings.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extensible/extensible-1.6.0-b1/src/form/recurrence/RangeEditWindow.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extensible/extensible-1.6.0-b1/src/form/recurrence/RangeEditPanel.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extensible/extensible-1.6.0-b1/src/calendar/data/EventMappings.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/form/PersonalDetails.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extensible/extensible-1.6.0-b1/src/calendar/view/AbstractCalendar.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/widgets/Store.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/patient/manager/view/PatientProfile.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/config/Constants.js",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/WEB-INF/views/appointment/appointments.jsp",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/JsFormat/Default (Windows).sublime-keymap",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/validators/date.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/utils/Initializer.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/appointment/manage/view/AbstractCalendar.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/sass/desktop/patient-profile.scss",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/WEB-INF/views/patient/case-view.jsp",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/patient/case/CaseView.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/patient/case/CaseNew.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/sass/desktop/case-view.scss",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/utils/CommonUtil.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/sass/desktop/case.scss",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/sass/desktop/patients.scss",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/sass/common/_icons.scss",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/sass/bootstrap/_bootstrap-icons.scss",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/JSLint/JSLint.sublime-build",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/model/Prescription.js",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/sass/common/_base.scss",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/User/JSLint.sublime-settings",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/JSLint/JSLint.sublime-settings",
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/sublime-jslint/sublime-jslint.sublime-settings",
+		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/WEB-INF/views/patient/case-new.jsp",
+		"/C/Users/Owner/Documents/Work/Workspace/Learn/JS/page.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\Owner\\Documents\\Workspace 2.0\\review-webapp\\src\\main\\webapp\\views",
+			"C:\\Users\\Owner\\Documents\\Workspace 2.0\\review-webapp\\src\\main\\webapp\\scripts",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Manufacturer",
+			"CreateManufacutererController",
+			"categorys",
+			"ys",
+			"typeahead",
+			"resolvedManufacturer",
+			"resolvedProduct",
+			"Manufacturer",
+			"Product",
+			"inden",
+			"CreateProductController",
+			"Product",
+			"Produc",
+			"resolvedProductProvider",
+			"\"dropdown",
+			"min",
+			"enforcer",
+			"parsePrivileges",
+			"ideas-privilege-item",
+			"next",
+			"Adminis",
+			"<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\" pageEncoding=\"UTF-8\"%>\n<%@ taglib prefix=\"sec\" uri=\"com.trelta.web.security\"%>\n<%@ taglib prefix=\"cache\" uri=\"com.trelta.commons.bust\"%>\n<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\"%>\n<%@ taglib prefix=\"fmt\" uri=\"http://java.sun.com/jsp/jstl/fmt\"%>\n<%@ taglib prefix=\"fn\" uri=\"http://java.sun.com/jsp/jstl/functions\"%>\n<%@ taglib prefix=\"spring\" uri=\"http://www.springframework.org/tags\"%>\n<%@ taglib prefix=\"security\" uri=\"http://www.springframework.org/security/tags\"%>\n<!DOCTYPE html>\n<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n<title>Trelta - Desktop</title>\n${cache:bust(\"css/desktop/admin.css\", \"css\")}\n</head>\n<body>\n    <div id=\"ideas-container\" class=\"ideas-container\">\n        <jsp:include page=\"../common/left-navigation.jsp\"></jsp:include>\n        <div id=\"ideas-body\">\n            <jsp:include page=\"../common/top-bar.jsp\"></jsp:include>\n            <div id=\"ideas-dashboard-content\">\n                <div class=\"ideas-split ideas-page-header\">\n                    <div class=\"ideas-page-header-inner\">\n                        <span class=\"icon-hospital ideas-page-header-icon ideas-fontaweson-icon-fix\"> </span>\n                        <div class=\"ideas-page-header-text-section\">\n                            <div>Manage your settings</div>\n                            <div class=\"ideas-page-header-text\">Administration</div>\n                        </div>\n                    </div>\n                </div>\n                <div id=\"ideas-desktop-body\" class=\"ideas-desktop-body\">\n                    <div class=\"ideas-setting-navbar\">\n                        <ul class=\"nav nav-tabs\">\n                            <li class=\"active\">\n                                <a href=\"#settings\" data-toggle=\"tab\">\n                                    <i class=\"icon-hospital icon-large\"></i>\n                                    Clinic Settings\n                                </a>\n                            </li>\n                            <li>\n                                <a href=\"#users\" data-toggle=\"tab\">\n                                    <i class=\"glyphicon glyphicon-user\"></i>\n                                    Other Users\n                                </a>\n                            </li>\n                        </ul>\n                        <div class=\"tab-content ideas-settings-tab-content\">\n                            <div class=\"tab-pane active\" id=\"settings\">\n                                <div class=\"container\">\n                                    <div class=\"row\">\n                                        <div class=\"col-lg-offset-1 col-lg-5 ideas-settings-card-top-offset\">\n                                            <div class=\"ideas-card\">\n                                                <div class=\"ideas-setting-card-title ideas-setting-clinic-title\">\n                                                    <span>Clinic details</span>\n                                                    <span class=\"ideas-setting-card-edit ideas-settings-clinic-edit pull-right\">Edit</span>\n                                                </div>\n                                                <div class=\"ideas-settings-card-content\">\n                                                    <div class=\"ideas-card-detail-container\">\n                                                        <div class=\"ideas-card-detail-title\">Clinic Name</div>\n                                                        <div class=\"ideas-card-detail-data\">${clinic.clinicName}</div>\n                                                    </div>\n                                                    <div class=\"ideas-card-detail-container\">\n                                                        <div class=\"ideas-card-detail-title\">Clinic Working Hours</div>\n                                                        <c:forEach items=\"${clinic.frClinicWorkHours}\" var=\"hours\">\n                                                            <div class=\"ideas-card-detail-data ideas-clinic-work-hours\">\n                                                                From\n                                                                <b>${hours.from}</b>\n                                                                to\n                                                                <b>${hours.to}</b>\n                                                            </div>\n                                                        </c:forEach>\n                                                    </div>\n                                                    <div class=\"ideas-card-detail-container\">\n                                                        <div class=\"ideas-card-detail-title\">Contact information</div>\n                                                        <div class=\"ideas-card-detail-data\">\n                                                            <span class=\"ideas-card-detail-label\">Phone</span>\n                                                            <span>${clinic.phoneO}</span>\n                                                        </div>\n                                                        <div class=\"ideas-card-detail-data\">\n                                                            <span class=\"ideas-card-detail-label\">Alt Phone</span>\n                                                            <span>${clinic.phoneAlt1}</span>\n                                                        </div>\n                                                        <div class=\"ideas-card-detail-data\">\n                                                            <span class=\"ideas-card-detail-label\">Address</span>\n                                                            <span>${clinic.frAddressMst.fullAddress}</span>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                        <div class=\"col-lg-5 ideas-setting-personal-card ideas-settings-card-top-offset\">\n                                            <div class=\"ideas-card\">\n                                                <div class=\"ideas-setting-card-title ideas-setting-personal-title\">\n                                                    <span> Personal details </span>\n                                                    <span class=\"pull-right ideas-setting-card-edit ideas-settings-personal-edit\">Edit</span>\n                                                </div>\n                                                <div class=\"ideas-settings-card-content\">\n                                                    <div class=\"ideas-card-detail-container\">\n                                                        <div class=\"ideas-card-detail-title\">Basic information</div>\n                                                        <div class=\"ideas-card-detail-data\">\n                                                            <span class=\"ideas-card-detail-label\">Name</span>\n                                                            <span>${user.fullName}</span>\n                                                        </div>\n                                                        <div class=\"ideas-card-detail-data\">\n                                                            <span class=\"ideas-card-detail-label\">Gender</span>\n                                                            <span>\n                                                                <c:choose>\n                                                                    <c:when test=\"${user.gender == 0}\">Male</c:when>\n                                                                    <c:otherwise>Female</c:otherwise>\n                                                                </c:choose>\n                                                            </span>\n                                                        </div>\n                                                        <div class=\"ideas-card-detail-data\">\n                                                            <span class=\"ideas-card-detail-label\">Mobile No</span>\n                                                            <span>${user.phoneM}</span>\n                                                        </div>\n                                                        <div class=\"ideas-card-detail-data\">\n                                                            <span class=\"ideas-card-detail-label\">Email</span>\n                                                            <span>${user.email}</span>\n                                                        </div>\n                                                    </div>\n                                                    <div class=\"ideas-card-detail-container\">\n                                                        <div class=\"ideas-card-detail-title\">Specialty</div>\n                                                        <div class=\"ideas-card-detail-data\">Endocrinologist</div>\n                                                    </div>\n                                                    <div class=\"ideas-card-detail-container\">\n                                                        <div class=\"ideas-card-detail-title\">Your Working Hours</div>\n                                                        <c:forEach items=\"${doctorHours}\" var=\"hours\">\n                                                            <div class=\"ideas-card-detail-data\">\n                                                                From\n                                                                <b>${hours.fromTime}</b>\n                                                                to\n                                                                <b>${hours.toTime}</b>\n                                                            </div>\n                                                        </c:forEach>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class=\"ideas-card ideas-setting-password-card\">\n                                                <div class=\"ideas-setting-card-title ideas-setting-password-title\">\n                                                    <span>Change Password</span>\n                                                    <span class=\"pull-right ideas-setting-card-edit ideas-setting-password-edit\">Edit</span>\n                                                </div>\n                                                <div class=\"ideas-settings-card-content\">\n                                                    <i>\n                                                        Your password\n                                                        <c:choose>\n                                                            <c:when test=\"${not empty passwordChange}\">  was last changed on ${passwordChange}</c:when>\n                                                            <c:otherwise> has never changed</c:otherwise>\n                                                        </c:choose>\n                                                    </i>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"tab-pane\" id=\"users\">\n                                <div class=\"container\">\n                                    <div class=\"row\">\n                                        <div class=\"ideas-users\">\n                                            <div class=\"ideas-users-inner\">\n                                                <span>Other Users</span>\n                                                <button data-toggle=\"tooltip\" data-animation=\"true\" data-title=\"Open Case\" class=\"btn btn-default disabled ideas-patient-case-open-btn\">\n                                                    <i class=\"glyphicon glyphicon-folder-open\"></i>\n                                                </button>\n                                                <button class=\"btn btn-danger btn-sm pull-right\">\n                                                    <i class=\"glyphicon glyphicon-user\"> </i>\n                                                    Add New User\n                                                </button>\n                                            </div>\n                                        </div>\n                                        <table class=\"table table-hover\">\n                                            <thead class=\"ideas-table-header\">\n                                                <tr>\n                                                    <th>Name</th>\n                                                    <th>Role</th>\n                                                    <th>Email</th>\n                                                    <th>Gender</th>\n                                                    <th>Active</th>\n                                                </tr>\n                                            </thead>\n                                            <tbody class=\"ideas-table-body\">\n                                                <c:forEach items=\"${users}\" var=\"accountUser\">\n                                                    <tr>\n                                                        <td>${accountUser.fullName}</td>\n                                                        <td>\n                                                            <c:choose>\n                                                                <c:when test=\"${accountUser.accUserType == 1}\">Administrator & Doctor</c:when>\n                                                                <c:when test=\"${accountUser.accUserType == 2}\">Administrator & Non-Doctor</c:when>\n                                                                <c:when test=\"${accountUser.accUserType == 3}\">Doctor</c:when>\n                                                                <c:otherwise>Non-Doctor</c:otherwise>\n                                                            </c:choose>\n                                                        </td>\n                                                        <td>${accountUser.email}</td>\n                                                        <td>\n                                                            <c:choose>\n                                                                <c:when test=\"${accountUser.gender == 1}\">Male</c:when>\n                                                                <c:otherwise>Female</c:otherwise>\n                                                            </c:choose>\n                                                        </td>\n                                                        <td>\n                                                            <c:choose>\n                                                                <c:when test=\"${accountUser.registrationComplete eq true}\">Active</c:when>\n                                                                <c:otherwise>Confirmation Pending</c:otherwise>\n                                                            </c:choose>\n                                                        </td>\n                                                    </tr>\n                                                </c:forEach>\n                                            </tbody>\n                                        </table>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <c:choose>\n        <c:when test=\"${properties['environment.development'] eq 'false'}\">\n            ${cache:bust(\"extjs-4.1.1/ext-all.js\", \"js\")}\n        </c:when>\n        <c:otherwise>\n            ${cache:bust(\"extjs-4.1.1/ext-debug.js\", \"js\")}\n        </c:otherwise>\n    </c:choose>\n    <c:choose>\n        <c:when test=\"${properties['environment.development'] eq 'true'}\">\n            ${cache:bust(\"jquery/jquery.min.js\", \"js\")}\n            ${cache:bust(\"js/bootstrap.js\", \"js\")}\n            <%-- ${cache:bust(\"js/bootstrap-tooltip.js\", \"js\")}\n            ${cache:bust(\"js/bootstrap-popover.js\", \"js\")}\n            ${cache:bust(\"js/bootstrap-modal.js\", \"js\")} --%>\n            ${cache:bust(\"js/com/ideas/log/log.js\", \"js\")}\n            ${cache:bust(\"js/com/ideas/utils/Initializer.js\", \"js\")}\n            ${cache:bust(\"js/com/ideas/config/ResponseCodes.js\", \"js\")}\n            ${cache:bust(\"js/com/ideas/config/Constants.js\", \"js\")}\n            ${cache:bust(\"js/com/ideas/config/Privileges.js\", \"js\")}\n            ${cache:bust(\"js/fullScreenApi.js\", \"js\")}\n            ${cache:bust(\"js/typeahead.min.js\", \"js\")}\n            ${cache:bust(\"js/hogan.js\", \"js\")}\n            ${cache:bust(\"js/com/ideas/desktop/Desktop_new.js\", \"js\")}\n            ${cache:bust(\"js/com/ideas/administration/clinic/Clinic_new.js\", \"js\")}\n        </c:when>\n        <c:otherwise>\n            <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\"></script>\n            ${cache:bust(\"js/deploy/library-all.js\", \"js\")}\n            ${cache:bust(\"js/deploy/trelta-settings-all.js\", \"js\")}\n        </c:otherwise>\n    </c:choose>\n</body>\n</html>",
+			"button",
+			"users",
+			"loadPatientDetails",
+			"indent",
+			"ctrl+shift+f",
+			"principle",
+			"eventadd",
+			"processAfterRender",
+			"attachDomEvents",
+			"eventAdded",
+			"CalendarConfiguration",
+			"recs.data.",
+			"preparePatientCombo",
+			"patientId",
+			"extensible-1.6.0-b1",
+			"extensible",
+			"create",
+			"xtype",
+			"CalendarStore",
+			"eventWindow",
+			"Abstrac",
+			"onSave",
+			"AbstractCa",
+			"EventWindow",
+			"addPatient",
+			"ideas-add-appointment-btn",
+			"calendarStore",
+			"ideas-tooltip-init",
+			"ideas-card",
+			"Add Follow",
+			"parent",
+			"Profile.js",
+			"dateOfBirth",
+			".ideas-card",
+			"@",
+			"ideas-card",
+			"margin-top",
+			"docs",
+			"Edit",
+			"$anchor-blue",
+			"-text",
+			"ideas-tests",
+			"ideas-diagnosis-set",
+			"diagnosis-set",
+			"Hogan.compile",
+			"failureResponse",
+			"ideas-diagnosis",
+			"${doctorId}",
+			"${doctor}",
+			"doctor",
+			"ADMINI",
+			"DOCTOR",
+			"add New",
+			"ideas-add-follow-up-btn",
+			"/record",
+			".patient",
+			"match_pair",
+			"match",
+			"inward",
+			"match",
+			"ctrl+d",
+			"}</",
+			">\n",
+			"alt",
+			"ctrl+d",
+			"alt",
+			"LAST",
+			"last",
+			"tab",
+			"ctrl+q",
+			"j",
+			"js",
+			"jsp",
+			"html",
+			"auto_complete",
+			"history",
+			"tab-content",
+			"-btn",
+			"ideas-diagnosis-other-details",
+			"|\n",
+			"ideas-diagnosis-appt-time",
+			"-time",
+			"ideas-diagnosis-appt",
+			"ctrl+d",
+			"function"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"categories"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/main/webapp/scripts/manufacturer/controller_create_manufacturer.js",
+					"settings":
+					{
+						"buffer_size": 683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								474,
+								474
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 10,
+									"codeintel_scan_files_in_project": true,
+									"javascriptExtraPaths":
+									[
+									]
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Ruby",
+								"Sass",
+								"HTML5",
+								"CSS"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Ruby",
+								"Sass",
+								"HTML5",
+								"CSS"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails",
+								"Ext_30"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/main/webapp/views/products.html",
+					"settings":
+					{
+						"buffer_size": 2195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								53,
+								67
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 10,
+									"codeintel_scan_files_in_project": true,
+									"javascriptExtraPaths":
+									[
+									]
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Ruby",
+								"Sass",
+								"HTML5",
+								"CSS"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Ruby",
+								"Sass",
+								"HTML5",
+								"CSS"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails",
+								"Ext_30"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/main/webapp/scripts/product/controller_create_product.js",
+					"settings":
+					{
+						"buffer_size": 726,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								521,
+								521
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 10,
+									"codeintel_scan_files_in_project": true,
+									"javascriptExtraPaths":
+									[
+									]
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Ruby",
+								"Sass",
+								"HTML5",
+								"CSS"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Ruby",
+								"Sass",
+								"HTML5",
+								"CSS"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails",
+								"Ext_30"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/main/webapp/views/create-product.html",
+					"settings":
+					{
+						"buffer_size": 2127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1111,
+								1111
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 10,
+									"codeintel_scan_files_in_project": true,
+									"javascriptExtraPaths":
+									[
+									]
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Ruby",
+								"Sass",
+								"HTML5",
+								"CSS"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Ruby",
+								"Sass",
+								"HTML5",
+								"CSS"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails",
+								"Ext_30"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/main/webapp/scripts/product/router_product.js",
+					"settings":
+					{
+						"buffer_size": 1351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1155,
+								1155
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 10,
+									"codeintel_scan_files_in_project": true,
+									"javascriptExtraPaths":
+									[
+									]
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Ruby",
+								"Sass",
+								"HTML5",
+								"CSS"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Ruby",
+								"Sass",
+								"HTML5",
+								"CSS"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails",
+								"Ext_30"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 142.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"create-product",
+				"src/main/webapp/views/create-product.html"
+			],
+			[
+				"prod",
+				"src/main/webapp/views/products.html"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"categ",
+				"src/main/webapp/views/categories.html"
+			],
+			[
+				"controller_create_manufacturer",
+				"src/main/webapp/scripts/manufacturer/controller_create_manufacturer.js"
+			],
+			[
+				"index",
+				"src/main/webapp/index.html"
+			],
+			[
+				"cate",
+				"src/main/webapp/views/categories.html"
+			],
+			[
+				"manufac",
+				"src/main/webapp/views/manufacturers.html"
+			],
+			[
+				"manu",
+				"src/main/webapp/views/manufacturers.html"
+			],
+			[
+				"index.html",
+				"src/main/webapp/index.html"
+			],
+			[
+				"createproductcontroller",
+				"src/main/webapp/scripts/product/CreateProductController.js"
+			],
+			[
+				"creatp",
+				"src/main/webapp/scripts/product/CreateProductController.js"
+			],
+			[
+				"produ",
+				"src/main/java/com/reviews/web/domain/Product.java"
+			],
+			[
+				"product",
+				"src/main/java/com/reviews/web/domain/Product.java"
+			],
+			[
+				"bower",
+				"bower.json"
+			],
+			[
+				"pom",
+				"pom.xml"
+			],
+			[
+				"router_pr",
+				"src/main/webapp/scripts/product/router_product.js"
+			],
+			[
+				"controller_pr",
+				"src/main/webapp/scripts/product/controller_product.js"
+			],
+			[
+				"privi",
+				"resources/js/com/ideas/config/Privileges.js"
+			],
+			[
+				"privil",
+				"resources/js/com/ideas/administration/clinic/view/Privileges.js"
+			],
+			[
+				"priv",
+				"resources/js/com/ideas/config/Privileges.js"
+			],
+			[
+				"admin.",
+				"resources/sass/desktop/admin.scss"
+			],
+			[
+				"evenstore",
+				"resources/js/com/ideas/appointment/manage/store/EventStore.js"
+			],
+			[
+				"",
+				"resources/js/com/ideas/appointment/manage/view/EventWindow.js"
+			],
+			[
+				"clinicde",
+				"resources/js/com/ideas/form/ClinicDetails.js"
+			],
+			[
+				"form",
+				"resources/js/com/ideas/widgets/Form.js"
+			],
+			[
+				"ev",
+				"resources/js/com/ideas/appointment/manage/view/EventWindow.js"
+			],
+			[
+				"calend",
+				"resources/js/com/ideas/appointment/manage/view/CalendarView.js"
+			],
+			[
+				"trelta-se",
+				"resources/js/deploy/trelta-settings-all-debug.js"
+			],
+			[
+				"setting",
+				"WEB-INF/views/usermanagement/settings.jsp"
+			],
+			[
+				"clincont",
+				"resources/js/com/ideas/administration/clinic/controller/ClinicController.js"
+			],
+			[
+				"ideas",
+				"resources/js/ideas.jsb2"
+			],
+			[
+				"adduser",
+				"resources/js/com/ideas/administration/clinic/view/AddUser.js"
+			],
+			[
+				"window",
+				"resources/js/com/ideas/widgets/Window.js"
+			],
+			[
+				"cliniccon",
+				"resources/js/com/ideas/administration/clinic/controller/ClinicController.js"
+			],
+			[
+				"clinic_n",
+				"resources/js/com/ideas/administration/clinic/Clinic_new.js"
+			],
+			[
+				"admin",
+				"resources/js/com/ideas/administration/clinic/Clinic.js"
+			],
+			[
+				"patient-pro",
+				"WEB-INF/views/patient/patient-profile.jsp"
+			],
+			[
+				"case.",
+				"WEB-INF/views/patient/case.jsp"
+			],
+			[
+				"sett",
+				"WEB-INF/views/usermanagement/settings.jsp"
+			],
+			[
+				"clinid",
+				"resources/js/com/ideas/form/ClinicDetails.js"
+			],
+			[
+				"clinicon",
+				"resources/js/com/ideas/administration/clinic/controller/ClinicController.js"
+			],
+			[
+				"cliniccn",
+				"resources/js/com/ideas/administration/clinic/Clinic_new.js"
+			],
+			[
+				"das",
+				"WEB-INF/views/usermanagement/dashboard.jsp"
+			],
+			[
+				"patient",
+				"resources/js/com/ideas/model/Patient.js"
+			],
+			[
+				"address",
+				"resources/js/com/ideas/model/Address.js"
+			],
+			[
+				"pcon",
+				"resources/js/com/ideas/patient/manager/controller/PatientController.js"
+			],
+			[
+				"pa",
+				"WEB-INF/views/patient/patient-profile.jsp"
+			],
+			[
+				"datera",
+				"resources/extensible/extensible-1.6.0-b1/src/form/field/DateRange.js"
+			],
+			[
+				"desl",
+				"resources/js/deploy/trelta-desktop-all-debug.js"
+			],
+			[
+				"patient.js",
+				"resources/js/com/ideas/model/Patient.js"
+			],
+			[
+				"past",
+				"resources/js/com/ideas/store/PatientStore.js"
+			],
+			[
+				"patco",
+				"resources/js/com/ideas/form/PatientCombo.js"
+			],
+			[
+				"cconfig",
+				"resources/js/com/ideas/appointment/manage/model/CalendarConfiguration.js"
+			],
+			[
+				"eventmod",
+				"resources/extensible/extensible-1.6.0-b1/src/calendar/data/EventModel.js"
+			],
+			[
+				"panel",
+				"resources/extjs-4.1.1/src/form/Panel.js"
+			],
+			[
+				"eventwind",
+				"resources/extensible/extensible-1.6.0-b1/src/calendar/form/EventWindow.js"
+			],
+			[
+				"evenwind",
+				"resources/js/com/ideas/appointment/manage/view/EventWindow.js"
+			],
+			[
+				"pacon",
+				"resources/js/com/ideas/patient/manager/controller/PatientController.js"
+			],
+			[
+				"pa-pro",
+				"WEB-INF/views/patient/patient-profile.jsp"
+			],
+			[
+				"evenw",
+				"resources/js/com/ideas/appointment/manage/view/EventWindow.js"
+			],
+			[
+				"denc",
+				"resources/js/com/ideas/desktop/controller/DesktopNewController.js"
+			],
+			[
+				"des",
+				"resources/js/com/ideas/desktop/DesktopApp.js"
+			],
+			[
+				"desn",
+				"resources/js/com/ideas/desktop/controller/DesktopNewController.js"
+			],
+			[
+				"appcont",
+				"resources/js/com/ideas/appointment/manage/controller/AppointmentController.js"
+			],
+			[
+				"desap",
+				"resources/js/com/ideas/desktop/DesktopApp.js"
+			],
+			[
+				"desnewc",
+				"resources/js/com/ideas/desktop/controller/DesktopNewController.js"
+			],
+			[
+				"desco",
+				"resources/js/com/ideas/desktop/controller/DesktopController.js"
+			],
+			[
+				"dash",
+				"WEB-INF/views/usermanagement/dashboard.jsp"
+			],
+			[
+				"eventwindo",
+				"resources/js/com/ideas/appointment/manage/view/EventWindow.js"
+			],
+			[
+				"calconf",
+				"resources/js/com/ideas/appointment/manage/model/CalendarConfiguration.js"
+			],
+			[
+				"appointment.js",
+				"resources/js/com/ideas/appointment/manage/Appointment.js"
+			],
+			[
+				"appcon",
+				"resources/js/com/ideas/appointment/manage/controller/AppointmentController.js"
+			],
+			[
+				"model",
+				"resources/extensible/extensible-1.6.0-b1/src/data/Model.js"
+			],
+			[
+				"pat",
+				"WEB-INF/views/patient/patient-profile.jsp"
+			],
+			[
+				"calendarstore",
+				"resources/js/com/ideas/appointment/manage/store/CalendarStore.js"
+			],
+			[
+				"daterange",
+				"resources/extensible/extensible-1.6.0-b1/src/form/field/DateRange.js"
+			],
+			[
+				"calendarcombo",
+				"resources/extensible/extensible-1.6.0-b1/src/calendar/form/field/CalendarCombo.js"
+			],
+			[
+				"calendarm",
+				"resources/extensible/extensible-1.6.0-b1/src/calendar/data/CalendarMappings.js"
+			],
+			[
+				"rangeeditpanel",
+				"resources/extensible/extensible-1.6.0-b1/src/form/recurrence/RangeEditPanel.js"
+			],
+			[
+				"rangeeditwindow",
+				"resources/extensible/extensible-1.6.0-b1/src/form/recurrence/RangeEditWindow.js"
+			],
+			[
+				"eventmappings",
+				"resources/extensible/extensible-1.6.0-b1/src/calendar/data/EventMappings.js"
+			],
+			[
+				"eventmode",
+				"resources/extensible/extensible-1.6.0-b1/src/calendar/data/EventModel.js"
+			],
+			[
+				"per",
+				"resources/js/com/ideas/form/PersonalDetails.js"
+			],
+			[
+				"abstrcale",
+				"resources/extensible/extensible-1.6.0-b1/src/calendar/view/AbstractCalendar.js"
+			],
+			[
+				"store",
+				"resources/js/com/ideas/widgets/Store.js"
+			],
+			[
+				"des_e",
+				"resources/js/com/ideas/desktop/Desktop_new.js"
+			],
+			[
+				"descon",
+				"resources/js/com/ideas/desktop/controller/DesktopController.js"
+			],
+			[
+				"patientpr",
+				"resources/js/com/ideas/patient/manager/view/PatientProfile.js"
+			],
+			[
+				"events",
+				"resources/js/com/ideas/appointment/manage/store/EventStore.js"
+			],
+			[
+				"const",
+				"resources/js/com/ideas/config/Constants.js"
+			],
+			[
+				"patie-p",
+				"WEB-INF/views/patient/patient-profile.jsp"
+			],
+			[
+				"eventwn",
+				"resources/extensible/extensible-1.6.0-b1/src/calendar/form/EventWindow.js"
+			],
+			[
+				"appo",
+				"WEB-INF/views/appointment/appointments.jsp"
+			],
+			[
+				"patpro",
+				"WEB-INF/views/patient/patient-profile.jsp"
+			],
+			[
+				"calendcom",
+				"resources/extensible/extensible-1.6.0-b1/src/calendar/form/field/CalendarCombo.js"
+			],
+			[
+				"evenwin",
+				"resources/extensible/extensible-1.6.0-b1/src/calendar/form/EventWindow.js"
+			],
+			[
+				"patst",
+				"resources/js/com/ideas/store/PatientStore.js"
+			],
+			[
+				"pstore",
+				"resources/js/com/ideas/store/PatientStore.js"
+			],
+			[
+				"pcombo",
+				"resources/js/com/ideas/form/PatientCombo.js"
+			],
+			[
+				"calevi",
+				"resources/js/com/ideas/appointment/manage/view/CalendarView.js"
+			],
+			[
+				"calendvi",
+				"resources/js/com/ideas/appointment/manage/view/CalendarView.js"
+			],
+			[
+				"appointm",
+				"resources/js/com/ideas/appointment/manage/Appointment.js"
+			],
+			[
+				"appc",
+				"resources/js/com/ideas/appointment/manage/controller/AppointmentController.js"
+			],
+			[
+				"initi",
+				"resources/js/com/ideas/utils/Initializer.js"
+			],
+			[
+				"abstracale",
+				"resources/js/com/ideas/appointment/manage/view/AbstractCalendar.js"
+			],
+			[
+				"wi",
+				"resources/js/com/ideas/widgets/Window.js"
+			],
+			[
+				"appoint",
+				"resources/js/com/ideas/appointment/manage/Appointment.js"
+			],
+			[
+				"app",
+				"WEB-INF/views/appointment/appointments.jsp"
+			],
+			[
+				"eventwindow",
+				"resources/js/com/ideas/appointment/manage/view/EventWindow.js"
+			],
+			[
+				"calendarst",
+				"resources/js/com/ideas/appointment/manage/store/CalendarStore.js"
+			],
+			[
+				"date",
+				"resources/js/com/ideas/validators/date.js"
+			],
+			[
+				"appointment",
+				"resources/js/com/ideas/appointment/manage/Appointment.js"
+			],
+			[
+				"calstore",
+				"resources/js/com/ideas/appointment/manage/store/CalendarStore.js"
+			],
+			[
+				"calest",
+				"resources/js/com/ideas/appointment/manage/store/CalendarStore.js"
+			],
+			[
+				"pat-p",
+				"WEB-INF/views/patient/patient-profile.jsp"
+			],
+			[
+				"pcontr",
+				"resources/js/com/ideas/patient/manager/controller/PatientController.js"
+			],
+			[
+				"patprof",
+				"resources/js/com/ideas/patient/manager/PatientProfile.js"
+			],
+			[
+				"ppr",
+				"resources/js/com/ideas/patient/manager/view/PatientProfile.js"
+			],
+			[
+				"_des",
+				"resources/sass/desktop/_desktop-base.scss"
+			],
+			[
+				"case-v",
+				"resources/sass/desktop/case-view.scss"
+			],
+			[
+				"case",
+				"WEB-INF/views/patient/case.jsp"
+			],
+			[
+				"casenew",
+				"resources/js/com/ideas/patient/case/CaseNew.js"
+			],
+			[
+				"caseview",
+				"resources/js/com/ideas/patient/case/CaseView.js"
+			],
+			[
+				"case-view",
+				"resources/sass/desktop/case-view.scss"
+			],
+			[
+				"pcontro",
+				"resources/js/com/ideas/patient/manager/controller/PatientController.js"
+			],
+			[
+				"patientprof",
+				"resources/js/com/ideas/patient/manager/PatientProfile.js"
+			],
+			[
+				"desktop-b",
+				"resources/sass/desktop/_desktop-base.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 298.0,
+	"status_bar_visible": true
+}
