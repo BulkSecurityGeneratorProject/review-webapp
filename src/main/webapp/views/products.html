@@ -6,15 +6,6 @@
         <span class="glyphicon glyphicon-flash"></span> Create a new Product
     </a>
     
-    <div class="modal fade" id="saveProductModal" tabindex="-1" role="dialog" aria-labelledby="myProductLabel"
-         aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                
-            </div>
-        </div>
-    </div>
-
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
@@ -25,9 +16,7 @@
                     <th>Category</th>
                     <th>Image</th>
                     <th>Wiki</th>
-                    <th>CreatedDate</th>
-                    <th>UpdatedDate</th>
-                    <th>UpdatedBy</th>
+                    <th>Tags</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,23 +27,19 @@
                     <td>{{product.category.name}}</td>
                     <td>{{product.image}}</td>
                     <td>{{product.wiki}}</td>
-                    <td>{{product.createdDate}}</td>
-                    <td>{{product.updatedDate}}</td>
-                    <td>{{product.updatedBy}}</td>
+                    <td>{{product.tags}}</td>
                     <td>
-                        <button type="submit"
-                                ng-click="update(product.id)"
-                                class="btn btn-default">
+                        <a href="#/product/create-product/{{product.id}}" class="btn btn-default btn-sm">
                             <span class="glyphicon glyphicon-pencil"></span> Edit
-                        </button>
+                        </a>
                         <button type="submit"
-                                ng-click="delete(product.id)"
-                                class="btn btn-danger">
-                            <span class="glyphicon glyphicon-remove-circle"></span> Delete
-                        </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+                        ng-click="delete(product.id)"
+                        class="btn btn-danger btn-sm">
+                        <span class="glyphicon glyphicon-remove-circle"></span> Delete
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 </div>

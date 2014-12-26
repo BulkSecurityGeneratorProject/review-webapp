@@ -2,7 +2,8 @@
 	"folders":
 	[
 		{
-			"path": "/C/Users/Owner/Documents/Workspace 2.0/review-webapp"
+			"follow_symlinks": true,
+			"path": "."
 		}
 	]
 }

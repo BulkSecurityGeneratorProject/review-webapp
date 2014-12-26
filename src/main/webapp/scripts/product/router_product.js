@@ -15,7 +15,7 @@ reviewsApp
                         authorizedRoles: [USER_ROLES.all]
                     }
                 })
-                .when('/product/create-product', {
+                .when('/product/create-product/:id?', {
                     templateUrl : 'views/create-product.html',
                     controller : 'CreateProductController',
                     resolve:{
@@ -24,6 +24,14 @@ reviewsApp
                         }], 
                         resolvedCategories : ['Category', function(Category) {
                           return Category.query().$promise;  
+                        }],
+                        resolvedProduct : ['Product', '$route', function(Product, $route) {
+                            if($route.current.params.id) {
+                                return Product.get({
+                                    id: $route.current.params.id
+                                }).$promise;
+                            }
+                            return null;
                         }]
                     },
                     access : {

@@ -21,7 +21,7 @@
             <div class="form-group">
                 <label>Tags <small>Semicolon (;) separated list</small>
                 </label>
-                <input type="text" class="form-control" ng-model="product.tagsList">
+                <input type="text" class="form-control" ng-model="product.tags">
             </div>
             <div class="form-group">
                 <label>Image</label>
@@ -31,9 +31,9 @@
                 <label>Wiki</label>
                 <input type="text" class="form-control" ng-model="product.wiki">
             </div>
-            <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <a class="btn btn-default" href="#/product">
                 <span class="glyphicon glyphicon-ban-circle"></span> Cancel
-            </button>
+            </a>
             <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">
                 <span class="glyphicon glyphicon-save"></span> Save
             </button>

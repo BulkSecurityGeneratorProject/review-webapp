@@ -1,9 +1,10 @@
 'use strict';
 
-reviewsApp.controller('CreateProductController', function ($scope, $location, resolvedManufacturer, resolvedCategories, Product) {
+reviewsApp.controller('CreateProductController', function ($scope, $location, resolvedManufacturer, resolvedCategories, resolvedProduct, Product) {
 
     $scope.manufacturers = resolvedManufacturer;
     $scope.categories = resolvedCategories;
+    $scope.product = resolvedProduct;
 
     $scope.create = function () {
         Product.save($scope.product,
@@ -17,7 +18,7 @@ reviewsApp.controller('CreateProductController', function ($scope, $location, re
             name: null,
             manufacturer: null,
             category: null,
-            tagList: null,
+            tags: null,
             image: null,
             wiki: null,
             createdDate: null,
