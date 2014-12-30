@@ -4,11 +4,6 @@ reviewsApp.controller('ProductController', function ($scope, resolvedProduct, Pr
 
         $scope.products = resolvedProduct;
 
-        $scope.update = function (id) {
-            $scope.product = Product.get({id: id});
-            $('#saveProductModal').modal('show');
-        };
-
         $scope.delete = function (id) {
             Product.delete({id: id},
                 function () {

@@ -22,7 +22,7 @@ reviewsApp.controller('ManufacturerController', function ($scope, resolvedManufa
         modalInstance.result.then(function () {
             $scope.manufacturers = Manufacturer.query();
         });
-    }
+    };
 
     $scope.open = function () {
         openModal();
