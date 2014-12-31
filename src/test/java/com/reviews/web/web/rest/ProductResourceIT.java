@@ -43,7 +43,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
-public class ProductResourceTest {
+public class ProductResourceIT {
 	
 	private static final String YEAR_OF_MANUFACTURE = "2014";
 
@@ -153,7 +153,7 @@ public class ProductResourceTest {
         assertThat(testProduct.getName()).isEqualTo(DEFAULT_NAME);
         assertThat(testProduct.getImage()).isEqualTo(DEFAULT_IMAGE);
         assertThat(testProduct.getWiki()).isEqualTo(DEFAULT_WIKI);
-        assertThat(testProduct.getCreatedDate()).isEqualTo(DEFAULT_CREATED_DATE);
+        assertThat(testProduct.getCreatedDate()).isNotNull();
         
     }
 
@@ -173,7 +173,7 @@ public class ProductResourceTest {
                 .andExpect(jsonPath("$.[0].expertReviews.[0].source").value(DEFAULT_EXPERT_REVIEW_SOURCE.toString()))
                 .andExpect(jsonPath("$.[0].image").value(DEFAULT_IMAGE.toString()))
                 .andExpect(jsonPath("$.[0].wiki").value(DEFAULT_WIKI.toString()))
-                .andExpect(jsonPath("$.[0].createdDate").value(DEFAULT_CREATED_DATE_STR))
+                .andExpect(jsonPath("$.[0].createdDate").exists())
                 .andExpect(jsonPath("$.[0].specs.yearOfManufacture").value(YEAR_OF_MANUFACTURE.toString()));
     }
 
@@ -192,7 +192,7 @@ public class ProductResourceTest {
             .andExpect(jsonPath("$.expertReviews.[0].source").value(DEFAULT_EXPERT_REVIEW_SOURCE.toString()))
             .andExpect(jsonPath("$.image").value(DEFAULT_IMAGE.toString()))
             .andExpect(jsonPath("$.wiki").value(DEFAULT_WIKI.toString()))
-            .andExpect(jsonPath("$.createdDate").value(DEFAULT_CREATED_DATE_STR))
+            .andExpect(jsonPath("$.createdDate").exists())
             .andExpect(jsonPath("$.specs.yearOfManufacture").value(YEAR_OF_MANUFACTURE.toString()));
     }
 
@@ -243,5 +243,13 @@ public class ProductResourceTest {
         // Validate the database is empty
         List<Product> products = productRepository.findAll();
         assertThat(products).hasSize(0);
+    }
+    
+    
+    public void fetchRemoteSpecs() throws Exception {
+    	restProductMockMvc.perform(get("/app/rest/products/remote-spec"))
+    	.andExpect(status().isOk())
+    	.andExpect(content().contentType(MediaType.APPLICATION_JSON))
+    	.andExpect(jsonPath("$.Launch.Announced").value("2014, September"));
     }
 }

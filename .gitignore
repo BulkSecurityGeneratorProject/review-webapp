@@ -16,3 +16,5 @@ build
 bin
 .externalToolBuilders
 *.log
+review-webapp.sublime-*
+*.bak

@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"return"
+			],
+			[
+				"cate",
+				"Category"
+			],
+			[
+				"Ca",
+				"Category"
+			],
+			[
+				"C",
+				"Category"
+			],
+			[
+				"_",
+				"_$q_"
+			],
+			[
+				"an",
+				"any"
+			],
+			[
+				"thb",
+				"thbcw	toHaveBeenCalledWith"
+			],
+			[
+				"Manu",
+				"Manufacturer"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"def",
+				"defer"
+			],
+			[
+				"call",
+				"callFake"
+			],
+			[
 				"fn",
 				"function"
 			],
@@ -18,10 +62,6 @@
 			[
 				"Man",
 				"Manufacturer"
-			],
-			[
-				"Manu",
-				"ManufacturerController"
 			],
 			[
 				"pa",
@@ -42,14 +82,6 @@
 			[
 				"$cont",
 				"$controller	AngularJS"
-			],
-			[
-				"thb",
-				"thbcw	toHaveBeenCalledWith"
-			],
-			[
-				"res",
-				"resolvedProduct"
 			],
 			[
 				"Pro",
@@ -439,37 +471,21 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/test/javascript/spec/manufacturer/controller_manufacturer_spec.js",
-			"settings":
-			{
-				"buffer_size": 1130,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/test/javascript/spec/product/controller_product_spec.js",
-			"settings":
-			{
-				"buffer_size": 875,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main/webapp/scripts/manufacturer/controller_manufacturer.js",
-			"settings":
-			{
-				"buffer_size": 1143,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 58.0,
+		"height": 294.0,
 		"selected_items":
 		[
+			[
+				"Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Br",
+				"Preferences: Browse Packages"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -480,10 +496,6 @@
 			],
 			[
 				"Insa",
-				"Package Control: Install Package"
-			],
-			[
-				"Inst",
 				"Package Control: Install Package"
 			],
 			[
@@ -721,20 +733,22 @@
 		"/home/varun/Documents/workspace/review-webapp/src/main",
 		"/home/varun/Documents/workspace/review-webapp/src/main/webapp",
 		"/home/varun/Documents/workspace/review-webapp/src/main/webapp/scripts",
-		"/home/varun/Documents/workspace/review-webapp/src/main/webapp/scripts/manufacturer",
+		"/home/varun/Documents/workspace/review-webapp/src/main/webapp/scripts/category",
 		"/home/varun/Documents/workspace/review-webapp/src/main/webapp/scripts/product",
 		"/home/varun/Documents/workspace/review-webapp/src/main/webapp/scripts/review",
 		"/home/varun/Documents/workspace/review-webapp/src/test",
 		"/home/varun/Documents/workspace/review-webapp/src/test/javascript",
-		"/home/varun/Documents/workspace/review-webapp/src/test/javascript/spec",
-		"/home/varun/Documents/workspace/review-webapp/src/test/javascript/spec/manufacturer",
-		"/home/varun/Documents/workspace/review-webapp/src/test/javascript/spec/product"
+		"/home/varun/Documents/workspace/review-webapp/src/test/javascript/spec"
 	],
 	"file_history":
 	[
+		"/home/varun/Documents/workspace/review-webapp/src/test/javascript/spec/manufacturer/controller_manufacturer_spec.js",
+		"/home/varun/Documents/workspace/review-webapp/src/test/javascript/spec/category/controller_category_spec.js",
+		"/home/varun/Documents/workspace/review-webapp/src/main/webapp/scripts/category/controller_category.js",
+		"/home/varun/Documents/workspace/review-webapp/src/main/webapp/scripts/category/controller_create_category.js",
+		"/home/varun/Documents/workspace/review-webapp/src/test/javascript/spec/product/controller_product_spec.js",
 		"/home/varun/Documents/workspace/review-webapp/src/main/webapp/scripts/manufacturer/controller_manufacturer.js",
 		"/home/varun/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
-		"/home/varun/Documents/workspace/review-webapp/src/test/javascript/spec/product/controller_product_spec.js",
 		"/home/varun/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/varun/Documents/workspace/review-webapp/src/main/webapp/scripts/product/router_product.js",
 		"/home/varun/Documents/workspace/review-webapp/src/main/webapp/scripts/product/controller_product.js",
@@ -767,7 +781,6 @@
 		"/home/varun/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
 		"/home/varun/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/Default (Linux).sublime-keymap",
 		"/home/varun/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
-		"/home/varun/Documents/workspace/review-webapp/src/main/webapp/scripts/category/controller_create_category.js",
 		"/home/varun/Documents/workspace/review-webapp/src/main/java/com/reviews/web/repository/CategoryRepository.java",
 		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/product/controller_product.js",
 		"/C/Users/Owner/Documents/Workspace 2.0/review-webapp/src/main/webapp/scripts/category/template_create_category.html",
@@ -856,10 +869,7 @@
 		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/desktop/Desktop.js",
 		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/desktop/controller/DesktopController.js",
 		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/appointment/manage/Appointment.js",
-		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/User/SublimeCodeIntel.sublime-settings",
-		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/js/com/ideas/appointment/manage/store/CalendarStore.js",
-		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extensible/extensible-1.6.0-b1/src/data/Model.js",
-		"/C/Users/Owner/Documents/Work/Ideas/clinic/web/src/main/webapp/resources/extensible/extensible-1.6.0-b1/src/Extensible.js"
+		"/C/Users/Owner/AppData/Roaming/Sublime Text 2/Packages/User/SublimeCodeIntel.sublime-settings"
 	],
 	"find":
 	{
@@ -880,6 +890,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Manufacturer",
 			"Password",
 			"PasswordSer",
 			"jasmin",
@@ -1014,99 +1025,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/test/javascript/spec/manufacturer/controller_manufacturer_spec.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1130,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								841,
-								841
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/test/javascript/spec/product/controller_product_spec.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 875,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/main/webapp/scripts/manufacturer/controller_manufacturer.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1143,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								795,
-								795
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

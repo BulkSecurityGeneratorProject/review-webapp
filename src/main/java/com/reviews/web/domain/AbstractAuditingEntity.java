@@ -8,6 +8,10 @@ import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.joda.ser.DateTimeSerializer;
+
 import javax.validation.constraints.NotNull;
 
 /**
@@ -23,6 +27,7 @@ public abstract class AbstractAuditingEntity {
 
     @CreatedDate
     @Field("created_date")
+    @JsonSerialize(using=DateTimeSerializer.class)
     private DateTime createdDate = DateTime.now();
 
     @LastModifiedBy
@@ -30,7 +35,8 @@ public abstract class AbstractAuditingEntity {
     private String lastModifiedBy;
 
     @LastModifiedDate
-    @Field("last_modified_date  ")
+    @Field("last_modified_date")
+    @JsonSerialize(using=DateTimeSerializer.class)
     private DateTime lastModifiedDate = DateTime.now();
 
     public String getCreatedBy() {

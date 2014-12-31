@@ -1,5 +1,7 @@
 package com.reviews.web.web.rest;
 
+import org.assertj.core.api.Condition;
+import org.joda.time.DateTime;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,6 +16,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
+
 import java.util.List;
 
 import com.reviews.web.Application;
@@ -23,6 +26,7 @@ import com.reviews.web.repository.ExpertReviewRepository;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;
 
 /**
  * Test class for the ExpertReviewResource REST controller.
@@ -32,7 +36,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
-public class ExpertReviewResourceTest {
+public class ExpertReviewResourceIT {
 
     private static final String DEFAULT_URL = "SAMPLE_TEXT";
     private static final String UPDATED_URL = "UPDATED_TEXT";
@@ -138,6 +142,7 @@ public class ExpertReviewResourceTest {
         restExpertReviewMockMvc.perform(post("/app/rest/expertReviews")
                 .contentType(TestUtil.APPLICATION_JSON_UTF8)
                 .content(TestUtil.convertObjectToJsonBytes(expertReview)))
+                .andDo(print())
                 .andExpect(status().isOk());
 
         // Validate the ExpertReview in the database
@@ -147,6 +152,13 @@ public class ExpertReviewResourceTest {
         assertThat(testExpertReview.getUrl()).isEqualTo(UPDATED_URL);
         assertThat(testExpertReview.getSummary()).isEqualTo(UPDATED_SUMMARY);
         assertThat(testExpertReview.getSource()).isEqualTo(UPDATED_SOURCE);;
+        assertThat(testExpertReview.getLastModifiedDate()).is(new Condition<DateTime>() {
+
+			@Override
+			public boolean matches(DateTime dateTime) {
+				return dateTime.isAfter(expertReview.getCreatedDate());
+			}
+		});
     }
 
     @Test

@@ -42,7 +42,7 @@ import com.reviews.web.repository.CategoryRepository;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
-public class CategoryResourceTest {
+public class CategoryResourceIT {
    private static final DateTimeFormatter dateTimeFormatter = DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ss");
 
     private static final String DEFAULT_NAME = "SAMPLE_TEXT";
@@ -108,9 +108,9 @@ public class CategoryResourceTest {
         assertThat(categories).hasSize(1);
         Category testCategory = categories.iterator().next();
         assertThat(testCategory.getName()).isEqualTo(DEFAULT_NAME);
-        assertThat(testCategory.getCreatedDate()).isEqualTo(DEFAULT_CREATED_DATE);
-        assertThat(testCategory.getLastModifiedDate()).isEqualTo(DEFAULT_UPDATED_DATE);
-        assertThat(testCategory.getLastModifiedBy()).isEqualTo(DEFAULT_UPDATED_BY);
+        assertThat(testCategory.getCreatedDate()).isNotNull();
+        assertThat(testCategory.getLastModifiedDate()).isNotNull();
+        assertThat(testCategory.getLastModifiedBy()).isNotNull();
         assertThat(testCategory.getTags()).containsExactly(DEFAULT_TAGS);
     }
 
@@ -126,10 +126,9 @@ public class CategoryResourceTest {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.[0].id").value(category.getId()))
                 .andExpect(jsonPath("$.[0].name").value(DEFAULT_NAME.toString()))
-                .andExpect(jsonPath("$.[0].createdDate").value(DEFAULT_CREATED_DATE_STR))
-                .andExpect(jsonPath("$.[0].updatedDate").value(DEFAULT_UPDATED_DATE_STR))
-                .andExpect(jsonPath("$.[0].updatedBy").value(DEFAULT_UPDATED_BY.toString()))
-                .andExpect(jsonPath("$.[0].tags").value(DEFAULT_TAGS.toString()));
+                .andExpect(jsonPath("$.[0].createdDate").exists())
+                .andExpect(jsonPath("$.[0].lastModifiedDate").exists())
+                .andExpect(jsonPath("$.[0].lastModifiedBy").exists());
     }
 
     @Test
@@ -143,10 +142,9 @@ public class CategoryResourceTest {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON))
             .andExpect(jsonPath("$.id").value(category.getId()))
             .andExpect(jsonPath("$.name").value(DEFAULT_NAME.toString()))
-            .andExpect(jsonPath("$.createdDate").value(DEFAULT_CREATED_DATE_STR))
-            .andExpect(jsonPath("$.updatedDate").value(DEFAULT_UPDATED_DATE_STR))
-            .andExpect(jsonPath("$.updatedBy").value(DEFAULT_UPDATED_BY.toString()))
-            .andExpect(jsonPath("$.tags").value(DEFAULT_TAGS.toString()));
+            .andExpect(jsonPath("$.createdDate").exists())
+            .andExpect(jsonPath("$.lastModifiedDate").exists())
+            .andExpect(jsonPath("$.lastModifiedBy").exists());
     }
 
     @Test
@@ -178,8 +176,8 @@ public class CategoryResourceTest {
         Category testCategory = categories.iterator().next();
         assertThat(testCategory.getName()).isEqualTo(UPDATED_NAME);
         assertThat(testCategory.getCreatedDate()).isEqualTo(UPDATED_CREATED_DATE);
-        assertThat(testCategory.getLastModifiedDate()).isEqualTo(UPDATED_UPDATED_DATE);
-        assertThat(testCategory.getLastModifiedBy()).isEqualTo(UPDATED_UPDATED_BY);
+        assertThat(testCategory.getLastModifiedDate()).isNotNull();
+        assertThat(testCategory.getLastModifiedBy()).isNotNull();
         assertThat(testCategory.getTags()).hasSize(2);
     }
 

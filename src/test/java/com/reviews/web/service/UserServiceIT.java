@@ -30,7 +30,7 @@ import static org.assertj.core.api.Assertions.*;
 @SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
 @Import(MongoConfiguration.class)
-public class UserServiceTest {
+public class UserServiceIT {
 
     @Inject
     private PersistentTokenRepository persistentTokenRepository;

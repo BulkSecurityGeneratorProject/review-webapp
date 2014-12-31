@@ -43,7 +43,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
 @Import(MongoConfiguration.class)
-public class AccountResourceTest {
+public class AccountResourceIT {
 
     @Inject
     private UserRepository userRepository;
