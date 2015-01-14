@@ -8,11 +8,13 @@ import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
@@ -32,6 +34,7 @@ import com.reviews.web.domain.Review;
 import com.reviews.web.repository.ProductRepository;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertNotNull;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
@@ -44,40 +47,37 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
 public class ProductResourceIT {
-	
-	private static final String YEAR_OF_MANUFACTURE = "2014";
 
-	private static final DateTimeFormatter dateTimeFormatter = DateTimeFormat
-			.forPattern("yyyy-MM-dd'T'HH:mm:ss");
+    private static final String YEAR_OF_MANUFACTURE = "2014";
 
-	private static final String DEFAULT_NAME = "SAMPLE_TEXT";
-	private static final String UPDATED_NAME = "UPDATED_TEXT";
+    private static final DateTimeFormatter dateTimeFormatter = DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ss");
 
-	private static final String DEFAULT_MANUFACTURER_ID = "SAMPLE_TEXT";
+    private static final String DEFAULT_NAME = "SAMPLE_TEXT";
+    private static final String UPDATED_NAME = "UPDATED_TEXT";
 
-	private static final String DEFAULT_IMAGE = "SAMPLE_TEXT";
-	private static final String UPDATED_IMAGE = "UPDATED_TEXT";
+    private static final String DEFAULT_MANUFACTURER_ID = "SAMPLE_TEXT";
 
-	private static final String DEFAULT_WIKI = "SAMPLE_TEXT";
-	private static final String UPDATED_WIKI = "UPDATED_TEXT";
+    private static final String DEFAULT_IMAGE = "SAMPLE_TEXT";
+    private static final String UPDATED_IMAGE = "UPDATED_TEXT";
 
-	private static final DateTime DEFAULT_CREATED_DATE = new DateTime(0L);
-	private static final DateTime UPDATED_CREATED_DATE = new DateTime()
-			.withMillisOfSecond(0);
-	private static final String DEFAULT_CREATED_DATE_STR = dateTimeFormatter
-			.print(DEFAULT_CREATED_DATE);
+    private static final String DEFAULT_WIKI = "SAMPLE_TEXT";
+    private static final String UPDATED_WIKI = "UPDATED_TEXT";
 
-	private static final String DEFAULT_MANUFACTURER_NAME = "SAMPLE_TEXT";
+    private static final DateTime DEFAULT_CREATED_DATE = new DateTime(0L);
+    private static final DateTime UPDATED_CREATED_DATE = new DateTime().withMillisOfSecond(0);
+    private static final String DEFAULT_CREATED_DATE_STR = dateTimeFormatter.print(DEFAULT_CREATED_DATE);
 
-	private static final String DEFAULT_MANUFACTURER_WEBSITE = "SAMPLE_TEXT";
+    private static final String DEFAULT_MANUFACTURER_NAME = "SAMPLE_TEXT";
 
-	private static final String DEFAULT_MANUFACTURER_WIKI = "SAMPLE_TEXT";
+    private static final String DEFAULT_MANUFACTURER_WEBSITE = "SAMPLE_TEXT";
 
-	private static final String DEFAULT_MANUFACTURER_LOGO = "SAMPLE_TEXT";
+    private static final String DEFAULT_MANUFACTURER_WIKI = "SAMPLE_TEXT";
 
-	private static final String DEFAULT_REVIEWER_NAME = "Founder";
+    private static final String DEFAULT_MANUFACTURER_LOGO = "SAMPLE_TEXT";
 
-	private static final String DEFAULT_EXPERT_REVIEW_SOURCE = "GSM Arena";    
+    private static final String DEFAULT_REVIEWER_NAME = "Founder";
+
+    private static final String DEFAULT_EXPERT_REVIEW_SOURCE = "GSM Arena";
 
     @Inject
     private ProductRepository productRepository;
@@ -96,38 +96,37 @@ public class ProductResourceIT {
 
     @Before
     public void initTest() {
-    	Manufacturer manufacturer = new Manufacturer();
-    	manufacturer.setId(DEFAULT_MANUFACTURER_ID);
-    	manufacturer.setName(DEFAULT_MANUFACTURER_NAME);
-    	manufacturer.setWebsite(DEFAULT_MANUFACTURER_WEBSITE);
-    	manufacturer.setWiki(DEFAULT_MANUFACTURER_WIKI);
-    	manufacturer.setLogo(DEFAULT_MANUFACTURER_LOGO);
-    	
-    	JSONObject specs = new JSONObject();
-    	try {
-			specs.put("yearOfManufacture", YEAR_OF_MANUFACTURE);
-		} catch (JSONException e) {
-		}
-		
-		List<ExpertReview> expertReviews = new ArrayList<>();
-		ExpertReview expertReview = new ExpertReview();
-		expertReview.setSource(DEFAULT_EXPERT_REVIEW_SOURCE);
-		expertReviews.add(expertReview);
-		
-		
-		List<Review> reviews = new ArrayList<>();
-		Review review = new Review();
-		review.setReviewerName(DEFAULT_REVIEWER_NAME.toString());
-		review.setText("Excellent Product");
-		review.setRating(5);
-		reviews.add(review);
-		
+        Manufacturer manufacturer = new Manufacturer();
+        manufacturer.setId(DEFAULT_MANUFACTURER_ID);
+        manufacturer.setName(DEFAULT_MANUFACTURER_NAME);
+        manufacturer.setWebsite(DEFAULT_MANUFACTURER_WEBSITE);
+        manufacturer.setWiki(DEFAULT_MANUFACTURER_WIKI);
+        manufacturer.setLogo(DEFAULT_MANUFACTURER_LOGO);
+
+        JSONObject specs = new JSONObject();
+        try {
+            specs.put("yearOfManufacture", YEAR_OF_MANUFACTURE);
+        } catch (JSONException e) {
+        }
+
+        List<ExpertReview> expertReviews = new ArrayList<>();
+        ExpertReview expertReview = new ExpertReview();
+        expertReview.setSource(DEFAULT_EXPERT_REVIEW_SOURCE);
+        expertReviews.add(expertReview);
+
+        List<Review> reviews = new ArrayList<>();
+        Review review = new Review();
+        review.setReviewerName(DEFAULT_REVIEWER_NAME.toString());
+        review.setText("Excellent Product");
+        review.setRating(5);
+        reviews.add(review);
+
         productRepository.deleteAll();
-        
+
         product = new Product();
         product.setReviews(reviews);
-		product.setExpertReviews(expertReviews);
-		product.setSpecs(specs);
+        product.setExpertReviews(expertReviews);
+        product.setSpecs(specs);
         product.setName(DEFAULT_NAME);
         product.setManufacturer(manufacturer);
         product.setImage(DEFAULT_IMAGE);
@@ -141,10 +140,9 @@ public class ProductResourceIT {
         assertThat(productRepository.findAll()).hasSize(0);
 
         // Create the Product
-        restProductMockMvc.perform(post("/app/rest/products")
-                .contentType(TestUtil.APPLICATION_JSON_UTF8)
-                .content(TestUtil.convertObjectToJsonBytes(product)))
-                .andExpect(status().isOk());
+        restProductMockMvc.perform(
+                post("/app/rest/products").contentType(TestUtil.APPLICATION_JSON_UTF8).content(
+                        TestUtil.convertObjectToJsonBytes(product))).andExpect(status().isOk());
 
         // Validate the Product in the database
         List<Product> products = productRepository.findAll();
@@ -154,7 +152,7 @@ public class ProductResourceIT {
         assertThat(testProduct.getImage()).isEqualTo(DEFAULT_IMAGE);
         assertThat(testProduct.getWiki()).isEqualTo(DEFAULT_WIKI);
         assertThat(testProduct.getCreatedDate()).isNotNull();
-        
+
     }
 
     @Test
@@ -163,8 +161,7 @@ public class ProductResourceIT {
         productRepository.save(product);
 
         // Get all the products
-        restProductMockMvc.perform(get("/app/rest/products"))
-                .andExpect(status().isOk())
+        restProductMockMvc.perform(get("/app/rest/products")).andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.[0].id").value(product.getId()))
@@ -183,24 +180,22 @@ public class ProductResourceIT {
         productRepository.save(product);
 
         // Get the product
-        restProductMockMvc.perform(get("/app/rest/products/{id}", product.getId()))
-            .andExpect(status().isOk())
-            .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-            .andExpect(jsonPath("$.id").value(product.getId()))
-            .andExpect(jsonPath("$.name").value(DEFAULT_NAME.toString()))
-            .andExpect(jsonPath("$.reviews.[0].reviewerName").value(DEFAULT_REVIEWER_NAME.toString()))
-            .andExpect(jsonPath("$.expertReviews.[0].source").value(DEFAULT_EXPERT_REVIEW_SOURCE.toString()))
-            .andExpect(jsonPath("$.image").value(DEFAULT_IMAGE.toString()))
-            .andExpect(jsonPath("$.wiki").value(DEFAULT_WIKI.toString()))
-            .andExpect(jsonPath("$.createdDate").exists())
-            .andExpect(jsonPath("$.specs.yearOfManufacture").value(YEAR_OF_MANUFACTURE.toString()));
+        restProductMockMvc.perform(get("/app/rest/products/{id}", product.getId())).andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(jsonPath("$.id").value(product.getId()))
+                .andExpect(jsonPath("$.name").value(DEFAULT_NAME.toString()))
+                .andExpect(jsonPath("$.reviews.[0].reviewerName").value(DEFAULT_REVIEWER_NAME.toString()))
+                .andExpect(jsonPath("$.expertReviews.[0].source").value(DEFAULT_EXPERT_REVIEW_SOURCE.toString()))
+                .andExpect(jsonPath("$.image").value(DEFAULT_IMAGE.toString()))
+                .andExpect(jsonPath("$.wiki").value(DEFAULT_WIKI.toString()))
+                .andExpect(jsonPath("$.createdDate").exists())
+                .andExpect(jsonPath("$.specs.yearOfManufacture").value(YEAR_OF_MANUFACTURE.toString()));
     }
 
     @Test
     public void getNonExistingProduct() throws Exception {
         // Get the product
-        restProductMockMvc.perform(get("/app/rest/products/{id}", 1L))
-                .andExpect(status().isNotFound());
+        restProductMockMvc.perform(get("/app/rest/products/{id}", 1L)).andExpect(status().isNotFound());
     }
 
     @Test
@@ -213,10 +208,9 @@ public class ProductResourceIT {
         product.setImage(UPDATED_IMAGE);
         product.setWiki(UPDATED_WIKI);
         product.setCreatedDate(UPDATED_CREATED_DATE);
-        restProductMockMvc.perform(post("/app/rest/products")
-                .contentType(TestUtil.APPLICATION_JSON_UTF8)
-                .content(TestUtil.convertObjectToJsonBytes(product)))
-                .andExpect(status().isOk());
+        restProductMockMvc.perform(
+                post("/app/rest/products").contentType(TestUtil.APPLICATION_JSON_UTF8).content(
+                        TestUtil.convertObjectToJsonBytes(product))).andExpect(status().isOk());
 
         // Validate the Product in the database
         List<Product> products = productRepository.findAll();
@@ -236,20 +230,24 @@ public class ProductResourceIT {
         productRepository.save(product);
 
         // Get the product
-        restProductMockMvc.perform(delete("/app/rest/products/{id}", product.getId())
-                .accept(TestUtil.APPLICATION_JSON_UTF8))
-                .andExpect(status().isOk());
+        restProductMockMvc.perform(
+                delete("/app/rest/products/{id}", product.getId()).accept(TestUtil.APPLICATION_JSON_UTF8)).andExpect(
+                status().isOk());
 
         // Validate the database is empty
         List<Product> products = productRepository.findAll();
         assertThat(products).hasSize(0);
     }
-    
-    
-    public void fetchRemoteSpecs() throws Exception {
-    	restProductMockMvc.perform(get("/app/rest/products/remote-spec"))
-    	.andExpect(status().isOk())
-    	.andExpect(content().contentType(MediaType.APPLICATION_JSON))
-    	.andExpect(jsonPath("$.Launch.Announced").value("2014, September"));
+
+    @Test
+    public void testFetchProductSpecs() throws Exception {
+        restProductMockMvc
+                .perform(
+                        get("/app/rest/products/specs").param("url", "http://www.gsmarena.com/htc_desire_820-6636.php"))
+                .andExpect(status().isOk()).andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(jsonPath("$.Body.Dimensions").exists()).andExpect(jsonPath("$.Platform.Os").exists())
+                .andExpect(jsonPath("$.Display.Size").exists()).andExpect(jsonPath("$.Memory.Internal").exists())
+                .andExpect(jsonPath("$.Camera.Primary").exists());
+
     }
 }
